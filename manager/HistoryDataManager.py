@@ -61,8 +61,8 @@ class HistoryDataManager():
                     continue
                 else:
                     df = self.stockKDataCrawler.query_history_day_k_data(code, start_date.year + i, cur_month)
-                    query_keys = ['code', 'date']
-                    om.df_to_mongo(constant.table_name_k_data, df,query_keys)
+                    #query_keys = ['code', 'date']
+                    om.df_to_mongo_inserts(constant.table_name_k_data, df)
                     logging.info(' done query_history_day_k_data {}, {}--{}'.format(code, start_date.year + i, cur_month))
 
 

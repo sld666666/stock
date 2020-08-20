@@ -55,8 +55,8 @@ class GrahamTendency():
         raise NotImplementedError("Must override method")
 
     def filter(self, codes):
-        df_support_history = om.df_from_mongo(self.get_tmp_support_name())
-
+       #df_support_history = om.df_from_mongo(self.get_tmp_support_name())
+        df_support_history = None
         for code in codes:
             if base.is_df_validate(df_support_history) and \
                             len(df_support_history.loc[df_support_history['code'] == code]) > 0:
@@ -94,7 +94,11 @@ class GrahamTendency():
         df_balance = self.bonusDataManager.get_data(code, constant.table_name_balance, cj.BalanceCrawler())
         if base.is_df_validate(df_balance):
             df_balance = df_balance.sort_values(by=['report_date'], ascending=False).head(1)
-            totle_tangibles = df_balance['total_assets'].iloc[0].astype(float) - df_balance['intangible_assets'].iloc[0]
+            intangible_assets =  df_balance['intangible_assets'].iloc[0].astype(float)
+            if intangible_assets > 0 :
+                totle_tangibles = df_balance['total_assets'].iloc[0].astype(float) -intangible_assets
+            else:
+                totle_tangibles = df_balance['total_assets'].iloc[0].astype(float)
             return  totle_tangibles
 
 
@@ -277,7 +281,7 @@ class GrahamBalance(GrahamTendency):
         return constant.table_name_tmp_balance_supported
 
     def is_supported(self, code, date):
-        last_year = date - 1
+        last_year = date.year
         # 获取上一个报告日的有形资产
         totle_tangibles = self._get_totle_tangibles(code, last_year)
         if None is totle_tangibles:
@@ -311,7 +315,7 @@ class GrahamCashflow(GrahamTendency):
         return constant.table_name_tmp_cashflow_supported
 
     def is_supported(self,code, date):
-        last_year = date.year - 1
+        last_year = date.year
 
         cashflows = self.bonusDataManager.get_data(code, constant.talbe_name_cashflow, cj.CashflowCrawler())
 
@@ -495,7 +499,10 @@ if __name__=='__main__':
 
     df_company = om.df_from_mongo(constant.table_name_company)
     codes = df_company['code'].to_list()
-    #codes = ['sh.600015']
-    orderGrahamTendency = OrderGrahamTendency()
-    orderGrahamTendency.filter(codes)
+    codes = ['sh.600606']
+    #orderGrahamTendency = OrderGrahamTendency()
+    #orderGrahamTendency.filter(codes)
     #GrahamBalance().filter(codes)
+    #GrahamBalance().filter(codes)
+    for Tendency in GrahamTendency.__subclasses__():
+        Tendency().filter(codes)
