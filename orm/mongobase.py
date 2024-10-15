@@ -1,12 +1,10 @@
 import datetime
 from pymongo import MongoClient
 import pandas as pd
-import matplotlib.pyplot as plt
-from dateutil import parser
-plt.switch_backend('agg')
 
-
-client = MongoClient('localhost', 27017)
+uri = 'mongodb+srv://{}@stock.cagcs.mongodb.net/?retryWrites=true&w=majority&appName=stock'.format('sld666666:sld666666%40')
+print(uri)
+client = MongoClient(uri)
 db = client.stock
 
 def df_to_mongo(table_name, df, query_keys):
@@ -84,8 +82,20 @@ def get(table_name, conditions = None):
 
 def update(table_name, value, query):
     table = db[table_name]
-    return table.update(query, value, upsert = True)
+    return table.update_one(query, value, upsert = True)
 
 def remove(table_name, conditions):
     table = db[table_name]
     return table.remove(conditions)
+
+
+if __name__=='__main__':
+    try:
+       # client.admin.command('ping')
+        print("Pinged your deployment. You successfully connected to MongoDB!")
+        table = db['history_history_data']
+       # table.insert_many([{'key':'value'}])
+        value = table.find_one({'code': 'sh.600000', 'year': 2000})
+        print(value)
+    except Exception as e:
+        print(e)

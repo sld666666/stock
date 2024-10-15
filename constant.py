@@ -32,3 +32,5 @@ table_name_k_data_history= 'k_data_history'
 
 
 key_date_format = '%Y-%m-%d'
+
+observation_list = {'sh.000016':'上证50', 'sh.600900': '长江电力'}
