@@ -7,7 +7,7 @@ import orm.mongobase
 
 ## 策略，网格参数微调
 class GridStategy:
-    def __init__(self, max_price, min_price, grid_level = 10, size_stategy =1, cash_stategy = 1):
+    def __init__(self, max_price, min_price, grid_level = 2, size_stategy =1, cash_stategy = 1):
         #总共是几个网格
         self.grid_level = grid_level
         ## 网格大小

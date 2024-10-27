@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb1f0de0-1db5-470c-836c-a7ba201e17db" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/analyze/GridTendency.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask_demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/stock.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stock.iml" afterDir="false" />
+    <list default="true" id="eb1f0de0-1db5-470c-836c-a7ba201e17db" name="Default" comment="update">
+      <change afterPath="$PROJECT_DIR$/analyze/GridTendencyEx.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyze/GridTendency.py" beforeDir="false" afterPath="$PROJECT_DIR$/analyze/GridTendency.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constant.py" beforeDir="false" afterPath="$PROJECT_DIR$/constant.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/HistoryDateCrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/HistoryDateCrawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler/ICrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/ICrawler.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/ErrorTask.py" beforeDir="false" afterPath="$PROJECT_DIR$/orm/ErrorTask.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/base.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/orm/mongobase.py" beforeDir="false" afterPath="$PROJECT_DIR$/orm/mongobase.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,6 +171,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sld666666&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/sld666666/stock.git&quot;,
+    &quot;accountId&quot;: &quot;acdbdd9f-de1c-4718-86d5-949373aa5feb&quot;
+  }
+}</component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -428,13 +433,14 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.GridTendency.executor": "Run",
+    "Python.GridTendencyEx.executor": "Run",
     "Python.HistoryDateCrawler.executor": "Debug",
     "Python.flask_demo.executor": "Run",
     "Python.grid.executor": "Run",
     "Python.mongobase.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "/Users/shenluodong/Documents/project/stock",
+    "last_opened_file_path": "/Users/shenluodong/Documents/project/stock/analyze",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
@@ -460,7 +466,7 @@
       <recent name="$PROJECT_DIR$/resource" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.GridTendency">
+  <component name="RunManager" selected="Python.GridTendencyEx">
     <configuration name="GridTendency" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="stock" />
       <option name="ENV_FILES" value="" />
@@ -475,6 +481,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze/GridTendency.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GridTendencyEx" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="stock" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analyze" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze/GridTendencyEx.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -519,28 +547,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="datefrme_mongo" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="stock" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/analyze" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/analyze/datefrme_mongo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -594,19 +600,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.GridTendencyEx" />
       <item itemvalue="Python.flask_demo" />
       <item itemvalue="Python.mongobase" />
       <item itemvalue="Python.HistoryDateCrawler" />
       <item itemvalue="Python.GridTendency" />
-      <item itemvalue="Python.datefrme_mongo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.GridTendency" />
+        <item itemvalue="Python.GridTendencyEx" />
         <item itemvalue="Python.HistoryDateCrawler" />
+        <item itemvalue="Python.GridTendency" />
         <item itemvalue="Python.flask_demo" />
         <item itemvalue="Python.mongobase" />
-        <item itemvalue="Python.datefrme_mongo" />
       </list>
     </recent_temporary>
   </component>
@@ -629,6 +635,15 @@
       <option name="presentableId" value="Default" />
       <updated>1589183494263</updated>
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <option name="closed" value="true" />
+      <created>1729002074122</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729002074122</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -685,6 +700,10 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.49761903" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -770,11 +789,6 @@
           <option name="timeStamp" value="263" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/crawler/HistoryDateCrawler.py</url>
-          <line>56</line>
-          <option name="timeStamp" value="269" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/analyze/GridTendency.py</url>
           <line>68</line>
           <option name="timeStamp" value="282" />
@@ -800,10 +814,11 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
-        <watch expression="self.datas[0].datetime.date(0)" language="Python" />
-        <watch expression="buy_orders[len(buy_orders) -1].executed.price" language="Python" />
-        <watch expression="self.getwriterinfo()" language="Python" />
-        <watch expression="len(self.orders)" language="Python" />
+        <watch expression="close[0]" language="Python" />
+        <watch expression="self.datas[0].datetime.date(0) " language="Python" />
+        <watch expression="self.broker.get_cash()" language="Python" />
+        <watch expression="self.grid_strategy.sell_action" language="Python" />
+        <watch expression="len(buy_orders)" language="Python" />
       </configuration>
     </watches-manager>
   </component>
